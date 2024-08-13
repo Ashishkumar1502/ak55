@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Prime Truck and Auto Service</title>
+</head>
+<body>
+
+    <!-----------------------------------Navigation---------------------------------------------------------->
+    <!--<link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"/>  
+<nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src='./assets/imag2.png'alt="logo" />
+        </span>
+        <div class="text header-text">
+          <span class="main">PRIME TRUCK</span>
+          <span class="sub">and AUTO Service</span>
+        </div>
+      </div>
+      <i class="bx bx-chevron-right toggle"></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="search-bar">
+            <i class="bx bx-search icons"></i>
+            <input type="search" placeholder="Search..." />
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-home-alt icons"></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bar-chart-alt-2 icons"></i>
+              <span class="text nav-text">OurService</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bell icons"></i>
+              <span class="text nav-text">Review</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-pie-chart-alt icons"></i>
+              <span class="text nav-text">About</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-heart icons"></i>
+              <span class="text nav-text">Contact Us</span>
+            </a>
+          </li>
+        <li class="mode">
+          <div class="moon-sun">
+            <i class="bx bx-moon icons moon"></i>
+            <i class="bx bx-sun icons sun"></i>
+          </div>
+          <span class="mode-text text">Dark Mode</span>
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-------------------------------------------------------Home------------------------------------------------------------------------------>
+  <!--<div class="form-box-wrapper">
+  <div class="form-container">
+    <div class="right-section">
+    <h2 class="find-part-form">Find your part now</h2>
+    <form>
+        <label for="year">Year</label>
+        <select id="year" name="year">
+            <option value="" selected>Select Year</option>
+            <script>
+                for (let year = 1960; year <= 2024; year++) {
+                    document.write(`<option value="${year}">${year}</option>`);
+                }
+            </script>
+        </select>
+
+        <label for="make">Make</label>
+        <select id="make" name="make">
+            <option value="" selected>Select Make</option>
+            <script>
+                const makes = ["Acura","AMC","Austin","BMW","Buick","Cadillac","Chevy", "Chevrolet", "Ford", "Mercedes", "Tesla", "Volvo"];
+                makes.sort().forEach(make => {
+                document.getElementById('make').innerHTML += `<option value="${make.toLowerCase()}">${make}</option>`;});
+                </script>
+        </select>
+
+        <label for="model">Model</label>
+        <select id="model" name="model">
+            <option value="" selected>Select Model</option>
+             <script>
+            const models = ["CL","CSX","EL", "ILX", "Integra","Legend", "MDX", "NSX","RDX","RL","RLX","SLX","TL","TLX","TSX","Vigor","ZEIX"];
+            models.sort().forEach(model => {
+                document.getElementById('model').innerHTML += `<option value="${model.toLowerCase().replace(/\s+/g,'-')}">${model}</option>`;});
+            </script>
+        </select>
+
+        <label for="part">Part</label>
+        <select id="part" name="part">
+            <option value="" selected>Select Part</option>
+            <script>
+            const parts = ["Engine", "Transmission", "ABS","Cylinder Head","Drive Shaft","Engine Cradle","Module","Radio","Rear Axle","Temperature Control Unit","Steering Column","Suspension Parts","Wheels","Other"];
+            parts.sort().forEach(part => {
+                document.getElementById('part').innerHTML += `<option value="${part.toLowerCase().replace(/\s+/g,'-')}">${part}</option>`;});
+            </script>
+        </select>
+
+        <label for="details">Details</label>
+        <input type="text" id="details" name="details" placeholder="VIN/Additional Details">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+
+        <label for="email">Email <span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="phone">Phone <span>*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="123-4567-8901" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+
+        <button type="submit">Find your part</button>
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+<!-------------------------------------------- Footer--------------------------------------------------------------------->
+<!--<footer>
+  <div class="footer-content">
+      <p>We value the importance of your car! We commit to provide you with the used car parts to get you back up and running in no time.</p>
+      <p><a href="#">Policies and T&C</a></p>
+      <div class="contact">
+          <h2>Contact Us:</h2>
+          <p><i class="fas fa-map-marker-alt"></i> Main Office Address:</p>
+          <p>5900 Balcones Dr, Austin, Texas - 78731, USA</p>
+          <p><i class="fas fa-clock"></i> 8:00am - 9:30pm</p>
+          <p><i class="fas fa-envelope"></i> info@litautoparts.com</p>
+          <p><i class="fas fa-phone"></i> +1 (737) 210 1331</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024. Lit Auto Parts LLC</p>
+      <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>--!>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Prime Truck and Auto Service</title>
+</head>
+<body>
+
+    <!-----------------------------------Navigation---------------------------------------------------------->
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"/>  
+<!--<nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src='./assets/imag2.png'alt="logo" />
+        </span>
+        <div class="text header-text">
+          <span class="main">PRIME TRUCK</span>
+          <span class="sub">and AUTO Service</span>
+        </div>
+      </div>
+      <i class="bx bx-chevron-right toggle"></i>
+    </header>
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="search-bar">
+            <i class="bx bx-search icons"></i>
+            <input type="search" placeholder="Search..." />
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-home-alt icons"></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bar-chart-alt-2 icons"></i>
+              <span class="text nav-text">OurService</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bell icons"></i>
+              <span class="text nav-text">Review</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-pie-chart-alt icons"></i>
+              <span class="text nav-text">About</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-heart icons"></i>
+              <span class="text nav-text">Contact Us</span>
+            </a>
+          </li>
+        <li class="mode">
+          <div class="moon-sun">
+            <i class="bx bx-moon icons moon"></i>
+            <i class="bx bx-sun icons sun"></i>
+          </div>
+          <span class="mode-text text">Dark Mode</span>
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>!-->
+
+  <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src='./assets/imag2.png' alt="logo" />
+                </span>
+                <div class="text header-text">
+                    <span class="main">PRIME TRUCK</span>
+                    <span class="sub">and AUTO Service</span>
+                </div>
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="search-bar">
+                        <i class="bx bx-search icons"></i>
+                        <input type="search" placeholder="Search..." />
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icons"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bar-chart-alt-2 icons"></i>
+                            <span class="text nav-text">Our Service</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bell icons"></i>
+                            <span class="text nav-text">Review</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-pie-chart-alt icons"></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-heart icons"></i>
+                            <span class="text nav-text">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class="bx bx-moon icons moon"></i>
+                            <i class="bx bx-sun icons sun"></i>
+                        </div>
+                        <span class="mode-text text">Dark Mode</span>
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-------------------------------------------------------Home------------------------------------------------------------------------------>
+  <div class="clearfix">
+    <div class="form-box-wrapper">
+      <div class="form-container">
+        <div class="right-section">
+          <h2 class="find-part-form">Find your part now</h2>
+          <form id="find-part-form">
+              <label for="year">Year</label>
+              <select id="year" name="year">
+                  <option value="" selected>Select Year</option>
+                  <script>
+                      for (let year = 1960; year <= 2024; year++) {
+                          document.write(`<option value="${year}">${year}</option>`);
+                      }
+                  </script>
+              </select>
+
+              <label for="make">Make</label>
+              <select id="make" name="make">
+                  <option value="" selected>Select Make</option>
+                  <script>
+                      const makes = ["Acura","AMC","Austin","BMW","Buick","Cadillac","Chevy", "Chevrolet", "Ford", "Mercedes", "Tesla", "Volvo"];
+                      makes.sort().forEach(make => {
+                      document.getElementById('make').innerHTML += `<option value="${make.toLowerCase()}">${make}</option>`;});
+                      </script>
+              </select>
+
+              <label for="model">Model</label>
+              <select id="model" name="model">
+                  <option value="" selected>Select Model</option>
+                  <script>
+                  const models = ["CL","CSX","EL", "ILX", "Integra","Legend", "MDX", "NSX","RDX","RL","RLX","SLX","TL","TLX","TSX","Vigor","ZEIX"];
+                  models.sort().forEach(model => {
+                      document.getElementById('model').innerHTML += `<option value="${model.toLowerCase().replace(/\s+/g,'-')}">${model}</option>`;});
+                  </script>
+              </select>
+
+              <label for="part">Part</label>
+              <select id="part" name="part">
+                  <option value="" selected>Select Part</option>
+                  <script>
+                  const parts = ["Engine", "Transmission", "ABS","Cylinder Head","Drive Shaft","Engine Cradle","Module","Radio","Rear Axle","Temperature Control Unit","Steering Column","Suspension Parts","Wheels","Other"];
+                  parts.sort().forEach(part => {
+                      document.getElementById('part').innerHTML += `<option value="${part.toLowerCase().replace(/\s+/g,'-')}">${part}</option>`;});
+                  </script>
+              </select>
+
+              <label for="details">Details</label>
+              <input type="text" id="details" name="details" placeholder="VIN/Additional Details">
+
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name">
+
+              <label for="email">Email <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+
+              <label for="phone">Phone <span>*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="123-4567-8901" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+
+              <button type="submit">Find your part</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------- Footer--------------------------------------------------------------------->
+  <footer>
+    <div class="footer-content">
+        <p>We value the importance of your car! We commit to provide you with the used car parts to get you back up and running in no time.</p>
+        <p><a href="#">Policies and T&C</a></p>
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Main Office Address:</p>
+            <p>5900 Balcones Dr, Austin, Texas - 78731, USA</p>
+            <p><i class="fas fa-clock"></i> 8:00am - 9:30pm</p>
+            <p><i class="fas fa-envelope"></i> info@litautoparts.com</p>
+            <p><i class="fas fa-phone"></i> +1 (737) 210 1331</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024. Lit Auto Parts LLC</p>
+        <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
